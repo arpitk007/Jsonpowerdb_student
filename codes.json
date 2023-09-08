@@ -1,0 +1,183 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "9206300f-d0a1-42ef-9e02-59e53f42b35a",
+        "name": "JPDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "ad9f5973-75b2-42a4-8a58-a73370b28308",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90931220|-31949328696593438|90961303\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Worker\",\n    \"rel\": \"Worker-Rel\",\n    \"jsonStr\": {\n        \"name\": \"Arpit\",\n\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "b4d8817f-1dab-40ca-9af0-774a2de95a56",
+                "name": "GET",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90931220|-31949328696593438|90961303\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Worker\",\n    \"rel\": \"Worker-Rel\",\n    \"jsonStr\": {\n        \"id\": \"1\",\n        \"name\": \"Arpit\",\n        \"email\": \"arpitgzpbhu@gmail.com\",\n        \"mobileno\": \"7068816774\"\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "c9dcc283-5b6f-4568-96b5-2aeb9ed83e67",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n{\n    \"token\": \"90931220|-31949328696593438|90961303\",\n    \"dbName\": \"Worker\",\n    \"cmd\": \"REMOVE\",\n    \"rel\": \"Worker-Rel\",\n     \"record\":1\n  \n\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "37b642ef-cadb-4cc3-b025-02b8877e0986",
+                "name": "REMOVE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n{\n    \"token\": \"90931220|-31949328696593438|90961303\",\n    \"dbName\": \"Worker\",\n    \"cmd\": \"UPDATE\",\n    \"rel\": \"Worker-Rel\",\n    \"jsonStr\": {\n      \"1\":{\"name\":\"Arpit kushwaha\"}\n    }\n\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "c9edd379-b714-4f37-b9e2-a264bd6d6238",
+                "name": "UPDATE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
